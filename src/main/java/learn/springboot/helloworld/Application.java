@@ -13,7 +13,7 @@ public class Application {
 
     @RequestMapping("/")
     public String home() {
-        return "Hello world Spring app 2";
+        return "Hello world Spring app with GITOPS";
     }
 
     public static void main(String[] args) {
