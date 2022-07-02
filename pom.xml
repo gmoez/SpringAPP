@@ -8,14 +8,14 @@
     <artifactId>helloworld</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <!-- Inherit defaults from Spring Boot -->
+    <!-- Inherit defaults from Spring Boocqsdqdccct sqsqsg-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.1.4.RELEASE</version>
     </parent>
 
-    <!-- Add typical dependencies for a web application -->
+    <!-- Add typical dependencies for a web appqsdqsdlication -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
