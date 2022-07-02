@@ -15,7 +15,7 @@ node {
         echo "copying artifact generated"
         sh ("cp ../buildjob/target/helloworld-1.0-SNAPSHOT.jar .")
         echo "building image"
-        app = docker.build("moezg/helloworld_SP")
+        app = docker.build("moezg/springboot")
     }
 
     stage('Test image') {
