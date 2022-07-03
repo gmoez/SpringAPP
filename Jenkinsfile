@@ -28,13 +28,13 @@ node {
     
     stage('Push image Docker hub') {
         
-        docker.withRegistry('https://registry.hub.docker.com', '2fde6752-b7e4-4301-9834-e8683860bd5e') {
+        docker.withRegistry('https://registry.hub.docker.com', 'ID docker hub in your jenkins') {
             app.push("${env.BUILD_NUMBER}")
         }
     }
 
     stage('Trigger ManifestUpdate') {
-                echo "triggering updatemanifestjob"
+                echo "triggering job manifest pipeline"
                 build job: 'manifestpipeline', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
         }
 
